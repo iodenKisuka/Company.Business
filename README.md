@@ -1,4 +1,4 @@
-# CursoApi-CleanArquitecture-CQRS
+# CourseApi-CleanArquitecture-CQRS
 Architecture Design
 ![ApiNet8 diagrama](https://github.com/iodenKisuka/Company.Business/assets/54439985/3585e485-f894-459b-afa4-a1bc9f53d070)
 
