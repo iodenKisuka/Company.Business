@@ -1,5 +1,3 @@
-using Company.Business.Domain.Booking;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
