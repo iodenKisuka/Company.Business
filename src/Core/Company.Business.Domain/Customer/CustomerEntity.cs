@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Company.Business.Domain.Customer
+﻿namespace Company.Business.Domain.Customer
 {
     public class CustomerEntity
     {
