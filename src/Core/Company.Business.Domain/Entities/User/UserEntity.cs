@@ -1,4 +1,6 @@
-﻿namespace Company.Business.Domain.Entities.User
+﻿using Company.Business.Domain.Booking;
+
+namespace Company.Business.Domain.Entities.User
 {
     public class UserEntity
     {
@@ -7,5 +9,6 @@
         public string LastName { get; set; }
         public string UserName { get; set; }
         public string PassWord { get; set; }
+        public ICollection<BookingEntity> Bookins { get; set; }
     }
 }
