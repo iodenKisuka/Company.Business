@@ -9,6 +9,6 @@ namespace Company.Business.Domain.Entities.User
         public string LastName { get; set; }
         public string UserName { get; set; }
         public string PassWord { get; set; }
-        public ICollection<BookingEntity> Bookins { get; set; }
+        public ICollection<BookingEntity> Bookings { get; set; }
     }
 }

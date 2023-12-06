@@ -12,6 +12,10 @@ namespace Company.Business.Persistence.Configuration
             entityBuilder.Property(x => x.LastName).IsRequired();
             entityBuilder.Property(x => x.UserName).IsRequired();
             entityBuilder.Property(x => x.PassWord).IsRequired();
+
+            entityBuilder.HasMany(x => x.Bookings)
+                .WithOne(x => x.User)
+                .HasForeignKey(x => x.UserId);
         }
     }
 }
