@@ -17,13 +17,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.Business.Api", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.Business.Common", "src\Common\Company.Business.Common\Company.Business.Common.csproj", "{819DFAEF-6785-436E-8580-55C0A71997E7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.Business. Application", "src\Core\Company.Business. Application\Company.Business. Application.csproj", "{03BFB3F0-1C0A-4D26-91C0-94B9322293AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.Business.Application", "src\Core\Company.Business. Application\Company.Business.Application.csproj", "{03BFB3F0-1C0A-4D26-91C0-94B9322293AF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DEBF38FE-1F78-4AD6-872A-E42C42F0BBA3} = {DEBF38FE-1F78-4AD6-872A-E42C42F0BBA3}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.Business.Domain", "src\Core\Company.Business.Domain\Company.Business.Domain.csproj", "{DEBF38FE-1F78-4AD6-872A-E42C42F0BBA3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.Business.External", "src\Infrastructure\Company.Business.External\Company.Business.External.csproj", "{D48A8A18-34EF-4ED9-8E88-16219E207057}"
+	ProjectSection(ProjectDependencies) = postProject
+		{03BFB3F0-1C0A-4D26-91C0-94B9322293AF} = {03BFB3F0-1C0A-4D26-91C0-94B9322293AF}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Company.Business.Persistence", "src\Infrastructure\Company.business.Persistence\Company.Business.Persistence.csproj", "{74F97730-0618-43A4-AB63-4918038DE5BC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DEBF38FE-1F78-4AD6-872A-E42C42F0BBA3} = {DEBF38FE-1F78-4AD6-872A-E42C42F0BBA3}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

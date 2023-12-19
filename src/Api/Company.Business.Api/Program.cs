@@ -1,6 +1,10 @@
+using Company.Business.Persistence.Database;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddDbContext<DatabaseService>(options=>
+options.UseSqlServer(builder.Configuration["SQLConnectionString"]) );
 
 var app = builder.Build();
-app.run();
+app.Run();

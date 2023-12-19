@@ -2,11 +2,12 @@
 using Company.Business.Domain.Customer;
 using Company.Business.Domain.Entities.User;
 using Company.Business.Persistence.Configuration;
+using Empresa.Negocio.Application.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace Company.Business.Persistence.Database
 {
-    public class DatabaseService : DbContext
+    public class DatabaseService : DbContext, IDatabaseService
     {
         public DatabaseService(DbContextOptions options) : base(options)
         {
