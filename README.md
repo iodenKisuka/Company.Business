@@ -12,3 +12,7 @@ Clean Arquitecture (Proyect black)
 - Infratructure
     - Persistence (library class)
     - External (library class)    
+
+Database Diagram
+
+![databaseDiagram](https://github.com/iodenKisuka/Company.Business/assets/54439985/2b08af9c-8505-4ed8-b2be-5df39037922d)
